@@ -19,37 +19,16 @@ class GenericButton
      */
     protected $urlBuilder;
 
-    /**
-     * Registry
-     *
-     * @var Registry
-     */
-    protected $registry;
 
     /**
-     * Constructor
-     *
+     * GenericButton constructor.
      * @param Context $context
-     * @param Registry $registry
      */
     public function __construct(
         Context $context
-  //      Registry $registry
     ) {
         $this->urlBuilder = $context->getUrlBuilder();
-     //   $this->registry = $registry;
     }
-
-//    /**
-//     * Return the synonyms group Id.
-//     *
-//     * @return int|null
-//     */
-//    public function getId()
-//    {
-//        $contact = $this->registry->registry('contact');
-//        return $contact ? $contact->getId() : null;
-//    }
 
     /**
      * Generate url by route and parameters
